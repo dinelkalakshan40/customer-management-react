@@ -33,7 +33,6 @@ export default function CustomerList({ reload }: Props) {
                 <th className="py-3 px-4 text-left">NIC</th>
                 <th className="py-3 px-4 text-left">DOB</th>
                 <th className="py-3 px-4 text-left">Mobiles</th>
-                <th className="py-3 px-4 text-left">Address</th>
               </tr>
             </thead>
 
@@ -50,17 +49,6 @@ export default function CustomerList({ reload }: Props) {
 
                   <td className="py-3 px-4">
                     {c.mobiles?.join(", ") || "N/A"}
-                  </td>
-
-                  <td className="py-3 px-4 text-gray-700">
-                    {c.addresses && c.addresses.length > 0 ? (
-                      <>
-                        <div>{c.addresses[0].line1}</div>
-                        <div>{c.addresses[0].line2}</div>
-                      </>
-                    ) : (
-                      "N/A"
-                    )}
                   </td>
                 </tr>
               ))}

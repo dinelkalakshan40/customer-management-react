@@ -49,7 +49,7 @@ export default function CustomerForm({ refresh }: Props) {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    await API.post("/customers", form);
+    await API.post("/v1/customers", form);
     alert("Customer Created");
     refresh();
   };

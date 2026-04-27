@@ -25,7 +25,6 @@ function App() {
           <CustomerForm refresh={refresh} />
         </div>
 
-        {/* Optional Grid Section */}
         {/*
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
         <div className="bg-white/70 backdrop-blur-xl border border-white/40 shadow-xl rounded-3xl p-6">
